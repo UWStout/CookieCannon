@@ -21,9 +21,4 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Scenes/CharacterSelect");
     }
-
-    public void Quit()
-    {
-        Application.Quit();
-    }
 }

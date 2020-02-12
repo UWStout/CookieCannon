@@ -44,8 +44,6 @@ public class Launch : MonoBehaviour
             target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             //target = Input.mousePosition;
             target.z = 0;
-
-            target = cannon[turn].transform.position;
         }
 
         if (Input.GetMouseButtonUp(0))
@@ -56,8 +54,7 @@ public class Launch : MonoBehaviour
             release.z = 0;
 
             launchAngle = target - release;
-
-            if (launchAngle.magnitude > maxPower)
+            if(launchAngle.magnitude > maxPower)
             {
                 launchAngle.Normalize();
                 launchAngle *= maxPower;
