@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Launch : MonoBehaviour
 {
     public GameObject projectile;
     public float power = 10;
     public float maxPower = 10;
+    public Slider powerDisplay;
 
     private bool aiming;
     private List<GameObject> cannon;
@@ -76,6 +78,8 @@ public class Launch : MonoBehaviour
             {
                 cannon[turn].transform.rotation = Quaternion.AngleAxis(-Vector3.Angle(target - currentPos, Vector3.right), Vector3.forward);
             }
+
+            powerDisplay.value = (target - currentPos).magnitude;
         }
     }
 
