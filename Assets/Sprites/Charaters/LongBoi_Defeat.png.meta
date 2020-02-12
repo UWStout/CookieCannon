@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: 0d8e8d904a28d2842990e230ece21382
+guid: 7ae53deea7a8441438ceb10cc0887c0e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3268476594129949660
-    second: LongBoi_Idle_0
+      213: 5642802240604919131
+    second: LongBoi_Defeat_0
   - first:
-      213: -6773698873323044273
-    second: LongBoi_Idle_1
+      213: 2357261146786231271
+    second: LongBoi_Defeat_1
+  - first:
+      213: -6594415752864791986
+    second: LongBoi_Defeat_2
+  - first:
+      213: -7034464612541242017
+    second: LongBoi_Defeat_3
+  - first:
+      213: -1197357005822925286
+    second: LongBoi_Defeat_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -164,7 +173,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LongBoi_Idle_0
+      name: LongBoi_Defeat_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f59214683a2424c8dbcb056982afc8
+      internalID: 5642802240604919131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LongBoi_Defeat_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635f120bc82fcf7489d3ffdebc17ffd1
+      internalID: 2357261146786231271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LongBoi_Defeat_2
       rect:
         serializedVersion: 2
         x: 0
@@ -178,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17c3dc3bfcc5e024a8f4c0a8ee23f013
-      internalID: 3268476594129949660
+      spriteID: 4c7b3a70021f5a24a8070c41f105e3ae
+      internalID: -6594415752864791986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LongBoi_Idle_1
+      name: LongBoi_Defeat_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 64
+        y: 64
         width: 64
-        height: 62
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,8 +250,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7387cd5c6eb4cd4885f578123ef3896
-      internalID: -6773698873323044273
+      spriteID: d2983843b6f487f4fbe82f859b9593d7
+      internalID: -7034464612541242017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LongBoi_Defeat_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a100204847dd0dc41842416c21d7aefd
+      internalID: -1197357005822925286
       vertices: []
       indices: 
       edges: []
