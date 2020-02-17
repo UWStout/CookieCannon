@@ -24,9 +24,17 @@ public class DespawnAfterHit : MonoBehaviour
 
             if (timer >= despawnTime)
             {
-                Camera.main.GetComponent<Launch>().enabled = true;
                 Destroy(gameObject);
             }
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if (gameObject.tag == "Projectile")
+        {
+            Camera.main.GetComponent<Launch>().enabled = true;
+            Camera.main.GetComponent<CameraFollowProjectile>().SwitchSides();
         }
     }
 
