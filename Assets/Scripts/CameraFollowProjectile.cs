@@ -15,7 +15,7 @@ public class CameraFollowProjectile : MonoBehaviour
         following = false;
         timer = resetDelay;
         startPos = transform.position;
-        secondPos = new Vector3(GameObject.Find("Cannon2").transform.position.x - (startPos.x - GameObject.Find("Cannon").transform.position.x), GameObject.Find("Cannon2").transform.position.y - (startPos.y - GameObject.Find("Cannon").transform.position.y), -10);
+        secondPos = new Vector3(GameObject.Find("Cannon2").transform.position.x - (startPos.x - GameObject.Find("Cannon").transform.position.x), GameObject.Find("Cannon2").transform.position.y + (startPos.y - GameObject.Find("Cannon").transform.position.y), -10);
 
         isCameraSet = true;
     }
