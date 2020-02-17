@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CameraFollowProjectile : MonoBehaviour
 {
+    public List<GameObject> cookies;
+
     private GameObject projectile;
     private bool following, isCameraSet;
     private float xOffset;
@@ -29,11 +31,11 @@ public class CameraFollowProjectile : MonoBehaviour
             {
                 following = false;
             }
-            else if (projectile.transform.position.y <= -3)
+            /*else if (projectile.transform.position.y <= -3)
             {
                 following = false;
                 timer = 0;
-            }
+            }*/
             else
             {
                 transform.position = new Vector3(projectile.transform.position.x + xOffset, transform.position.y, transform.position.z);

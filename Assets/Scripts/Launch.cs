@@ -9,6 +9,7 @@ public class Launch : MonoBehaviour
     public float power = 10;
     public float maxPower = 10;
     public Slider powerDisplay;
+    public List<GameObject> cookies;
 
     private bool aiming;
     private List<GameObject> cannon;
