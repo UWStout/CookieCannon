@@ -327,6 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b6934cd93fe862458126cf53eeb9397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cookies: []
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -401,6 +402,7 @@ MonoBehaviour:
   power: 200
   maxPower: 10
   powerDisplay: {fileID: 84797841}
+  cookies: []
 --- !u!61 &519420034
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -525,6 +527,16 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 8628988632107060511, guid: 3254ba737ea7d414594a64e0df5cab03,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628988632107060511, guid: 3254ba737ea7d414594a64e0df5cab03,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3254ba737ea7d414594a64e0df5cab03, type: 3}
 --- !u!1 &553623514
@@ -571,16 +583,17 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 7.4285717, y: -9}
-      - {x: -5.714286, y: -9.142858}
-      - {x: -8.428572, y: -9.857143}
+    - - {x: 7.1124344, y: -9.10538}
+      - {x: -5.652031, y: -8.993214}
+      - {x: -8.639336, y: -9.277556}
       - {x: -14.000001, y: -9.857143}
-      - {x: -20, y: -11.285715}
+      - {x: -20.210762, y: -11.022266}
       - {x: -22.857143, y: -12.714286}
-      - {x: -22.857143, y: -14.571429}
-      - {x: 22.857143, y: -14.571429}
-      - {x: 22.857143, y: -12.571429}
-      - {x: 19.16943, y: -10.57475}
+      - {x: -22.858742, y: -14.418089}
+      - {x: -22.87262, y: -14.425027}
+      - {x: 22.857147, y: -14.413361}
+      - {x: 22.857147, y: -12.702511}
+      - {x: 19.116745, y: -10.943578}
       - {x: 14.571429, y: -10}
 --- !u!50 &553623516
 Rigidbody2D:
@@ -737,6 +750,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mass
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628988632107060511, guid: 3254ba737ea7d414594a64e0df5cab03,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628988632107060511, guid: 3254ba737ea7d414594a64e0df5cab03,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3254ba737ea7d414594a64e0df5cab03, type: 3}
@@ -1157,8 +1180,8 @@ PolygonCollider2D:
       - {x: -14.000001, y: -9.857143}
       - {x: -20, y: -11.285715}
       - {x: -22.857143, y: -12.714286}
-      - {x: -22.857143, y: -14.571429}
-      - {x: 22.857143, y: -14.571429}
+      - {x: -22.857143, y: -14.404153}
+      - {x: 22.857143, y: -14.404152}
       - {x: 22.857143, y: -12.571429}
       - {x: 19.16943, y: -10.57475}
       - {x: 14.571429, y: -10}
@@ -1442,6 +1465,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mass
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628988632107060511, guid: 3254ba737ea7d414594a64e0df5cab03,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628988632107060511, guid: 3254ba737ea7d414594a64e0df5cab03,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3254ba737ea7d414594a64e0df5cab03, type: 3}
@@ -1777,6 +1810,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mass
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628988631048159961, guid: 3254ba737ea7d414594a64e0df5cab03,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628988632107060511, guid: 3254ba737ea7d414594a64e0df5cab03,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628988632107060511, guid: 3254ba737ea7d414594a64e0df5cab03,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3254ba737ea7d414594a64e0df5cab03, type: 3}
