@@ -50,6 +50,9 @@ public class Health : MonoBehaviour
 
     public void Death()
     {
-
+        if(GetComponent<Animator>() != null)
+        {
+            GetComponent<Animator>().SetTrigger("Dead");
+        }
     }
 }
