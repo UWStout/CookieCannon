@@ -52,11 +52,16 @@ public class Health : MonoBehaviour
 
     public void Death()
     {
-        isDead = true;
-        if (GetComponent<Animator>() != null)
+        if (!isDead)
         {
-            GetComponent<Animator>().SetTrigger("Dead");
-            if(gameObject.tag == "Target")
+            isDead = true;
+            health = 0;
+            if (GetComponent<Animator>() != null)
+            {
+                GetComponent<Animator>().SetTrigger("Dead");
+
+            }
+            if (gameObject.tag == "Target")
             {
                 GetComponentInParent<CookieController>().TargetDestroyed();
             }

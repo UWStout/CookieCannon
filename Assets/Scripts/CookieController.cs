@@ -31,7 +31,7 @@ public class CookieController : MonoBehaviour
         ++destroyedTargets;
         if(destroyedTargets == numOfTargets-1)
         {
-            transform.Find("Store").GetComponent<Health>().enabled = true;
+            transform.Find("Shop").GetComponent<Health>().enabled = true;
         }
         else if(destroyedTargets >= numOfTargets)
         {
@@ -41,11 +41,11 @@ public class CookieController : MonoBehaviour
 
     public void DestroyCookie()
     {
-        Component[] animators = GetComponentsInChildren<Animator>();
+        Component[] entities = GetComponentsInChildren<Health>();
 
-        foreach (Animator anim in animators)
+        foreach (Health entity in entities)
         {
-            anim.SetTrigger("Dead");
+            entity.Death();
         }
 
         GameObject.Find("LevelController").GetComponent<LevelController>().Victory(team);

@@ -43,13 +43,13 @@ public class LevelController : MonoBehaviour
         Component[] animators;
         if (defeatedTeam == 1)
         {
-            animators = cookie2.GetComponentsInChildren<Animator>();
-            GetComponentInChildren<Text>().text = "Player 1 Wins!";
+            GetComponentInChildren<Text>().text = "Player 2 Wins!";
+            animators = cookie2.GetComponentsInChildren<Animator>(); 
         }
         else
         {
-            animators = cookie1.GetComponentsInChildren<Animator>();
-            GetComponentInChildren<Text>().text = "Player 2 Wins!";
+            GetComponentInChildren<Text>().text = "Player 1 Wins!";
+            animators = cookie1.GetComponentsInChildren<Animator>();     
         }
 
         foreach(Animator anim in animators)

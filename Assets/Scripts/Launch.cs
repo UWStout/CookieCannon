@@ -63,7 +63,9 @@ public class Launch : MonoBehaviour
                 launchAngle.Normalize();
                 launchAngle *= maxPower;
             }
-            Object.Instantiate(projectile, cannon[turn].transform.position, Quaternion.identity).GetComponent<Rigidbody2D>().AddForce((launchAngle)*power);
+            GameObject proj = Object.Instantiate(projectile, cannon[turn].transform.position, Quaternion.identity);
+            proj.GetComponent<Rigidbody2D>().AddForce((launchAngle) * power);
+            proj.GetComponent<ProjectileDamage>().team = turn + 1;
 
             target = cannon[turn].transform.position;
 

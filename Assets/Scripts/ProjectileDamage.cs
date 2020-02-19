@@ -5,6 +5,7 @@ using UnityEngine;
 public class ProjectileDamage : MonoBehaviour
 {
     public float damage = 1;
+    public float team;
 
     private bool firstHit;
     // Start is called before the first frame update
@@ -21,7 +22,7 @@ public class ProjectileDamage : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.GetComponent<Health>() != null)
+        if(collision.gameObject.GetComponent<Health>() != null && collision.gameObject.GetComponent<Health>().enabled && team != collision.gameObject.GetComponentInParent<CookieController>().team)
         {
             if (firstHit)
             {
