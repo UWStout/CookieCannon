@@ -9,9 +9,11 @@ public class Health : MonoBehaviour
 
     private float health;
     private Slider healthBar;
+    private bool isDead;
     // Start is called before the first frame update
     void Start()
     {
+        isDead = false;
         healthBar = gameObject.GetComponentInChildren<Slider>();
         //start with full health
         health = maxHealth;
@@ -41,7 +43,7 @@ public class Health : MonoBehaviour
             health -= damage;
 
             //Run the death function if health is lowered to 0 or lower
-            if(health <= 0)
+            if(health <= 0 && !isDead)
             {
                 Death();
             }
@@ -50,9 +52,15 @@ public class Health : MonoBehaviour
 
     public void Death()
     {
-        if(GetComponent<Animator>() != null)
+        isDead = true;
+        if (GetComponent<Animator>() != null)
         {
             GetComponent<Animator>().SetTrigger("Dead");
+            if(gameObject.tag == "Target")
+            {
+                GetComponentInParent<CookieController>().TargetDestroyed();
+            }
+            Destroy(gameObject, 3);
         }
     }
 }
