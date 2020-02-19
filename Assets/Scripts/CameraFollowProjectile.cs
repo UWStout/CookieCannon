@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class CameraFollowProjectile : MonoBehaviour
 {
+    public List<GameObject> cookies;
+
     private GameObject projectile;
     private bool following, isCameraSet;
     private float xOffset;
     private float timer, resetDelay = 2;
-    private Vector3 startPos;
+    private Vector3 startPos, secondPos;
     // Start is called before the first frame update
     void Start()
     {
         following = false;
         timer = resetDelay;
         startPos = transform.position;
+        secondPos = new Vector3(GameObject.Find("Cannon2").transform.position.x - (startPos.x - GameObject.Find("Cannon").transform.position.x), 0, -10);
+
         isCameraSet = true;
     }
 
@@ -27,11 +31,11 @@ public class CameraFollowProjectile : MonoBehaviour
             {
                 following = false;
             }
-            else if (projectile.transform.position.y <= -3)
+            /*else if (projectile.transform.position.y <= -3)
             {
                 following = false;
                 timer = 0;
-            }
+            }*/
             else
             {
                 transform.position = new Vector3(projectile.transform.position.x + xOffset, transform.position.y, transform.position.z);
@@ -40,16 +44,7 @@ public class CameraFollowProjectile : MonoBehaviour
         else if (projectile == null && !isCameraSet)
         {
             timer = resetDelay;
-            if (GetComponent<Launch>().NextTurn() == 0)
-            {
-                ResetCamera();
-            }
-            else
-            {
-                SetCamera(new Vector3(80f, 0, -10));
-            }
-            isCameraSet = true;
-            GetComponent<Launch>().ResetTarget();
+            SwitchSides();
         }
         else if(timer < resetDelay)
         {
@@ -77,15 +72,29 @@ public class CameraFollowProjectile : MonoBehaviour
         }
     }
 
+    public void SwitchSides()
+    {
+        if (GetComponent<Launch>().NextTurn() == 0)
+        {
+            ResetCamera();
+        }
+        else
+        {
+            SetCamera(secondPos);
+        }
+        isCameraSet = true;
+        GetComponent<Launch>().ResetTarget();
+    }
+
     private void ResetCamera()
     {
         transform.position = startPos;
-        Camera.main.orthographicSize = 5;
+        Camera.main.orthographicSize = 12.6f;
     }
 
     private void SetCamera(Vector3 position)
     {
         transform.position = position;
-        Camera.main.orthographicSize = 5;
+        Camera.main.orthographicSize = 12.6f;
     }
 }

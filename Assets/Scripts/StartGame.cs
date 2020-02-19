@@ -31,8 +31,16 @@ public class StartGame : MonoBehaviour
     {
         player1Team = team;
     }
+    public void RandomPlayer1Team()
+    {
+        player1Team = Random.Range(1, 4);
+    }
     public void SetPlayer2Team(int team)
     {
         player2Team = team;
+    }
+    public void RandomPlayer2Team()
+    {
+        player2Team = Random.Range(1, 4);
     }
 }
