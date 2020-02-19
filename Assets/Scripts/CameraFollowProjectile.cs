@@ -9,11 +9,12 @@ public class CameraFollowProjectile : MonoBehaviour
     private GameObject projectile;
     private bool following, isCameraSet;
     private float xOffset;
-    private float timer, resetDelay = 2;
+    private float timer, resetDelay = 2, cameraSize;
     private Vector3 startPos, secondPos;
     // Start is called before the first frame update
     void Start()
     {
+        cameraSize = Camera.main.orthographicSize;
         following = false;
         timer = resetDelay;
         startPos = transform.position;
@@ -89,12 +90,12 @@ public class CameraFollowProjectile : MonoBehaviour
     private void ResetCamera()
     {
         transform.position = startPos;
-        Camera.main.orthographicSize = 12.6f;
+        Camera.main.orthographicSize = cameraSize;
     }
 
     private void SetCamera(Vector3 position)
     {
         transform.position = position;
-        Camera.main.orthographicSize = 12.6f;
+        Camera.main.orthographicSize = cameraSize;
     }
 }
