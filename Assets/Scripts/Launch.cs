@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Launch : MonoBehaviour
 {
-    public GameObject projectile;
+    public GameObject[] projectile;
     public float power = 10;
     public float maxPower = 10;
     public Slider powerDisplay;
@@ -65,7 +65,7 @@ public class Launch : MonoBehaviour
                 launchAngle.Normalize();
                 launchAngle *= maxPower;
             }
-            GameObject proj = Object.Instantiate(projectile, cannon[turn].transform.position, Quaternion.identity);
+            GameObject proj = Object.Instantiate(projectile[Random.Range(0, projectile.Length)], cannon[turn].transform.position, Quaternion.identity);
             proj.GetComponent<Rigidbody2D>().AddForce((launchAngle) * power);
             proj.GetComponent<ProjectileDamage>().team = turn + 1;
 

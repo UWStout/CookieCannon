@@ -524,8 +524,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e980e156641f3d40b3f2aa509f7562e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 7053249673671466514, guid: c06da5753c4df7d478d2eeee80a590bf,
-    type: 3}
+  projectile:
+  - {fileID: 7053249673671466514, guid: c06da5753c4df7d478d2eeee80a590bf, type: 3}
+  - {fileID: 5178155642287581447, guid: a7260d879383b1c408a055b693b3c40e, type: 3}
+  - {fileID: 3903169186303496597, guid: 28dec3dc2d0b18f4a8f2de5808e486f3, type: 3}
+  - {fileID: 15300973418072982, guid: 7e01b2778b48e91498a574df667e7988, type: 3}
+  - {fileID: 3018779930863536624, guid: f742d6f5a2e880e43bbcd36bc38757d4, type: 3}
   power: 200
   maxPower: 10
   powerDisplay: {fileID: 84797841}
@@ -1265,6 +1269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2081203369}
   - component: {fileID: 2081203368}
+  - component: {fileID: 2081203370}
   m_Layer: 0
   m_Name: Border
   m_TagString: Untagged
@@ -1307,6 +1312,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2081203370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081203367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6cdbf341572d3442a0f6e9f469744e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8118300328775584274
 PrefabInstance:
   m_ObjectHideFlags: 0
