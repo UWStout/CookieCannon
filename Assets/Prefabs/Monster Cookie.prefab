@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 235942769694167412}
   m_Layer: 0
   m_Name: RD_Shop
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 4051531662887419801}
   m_Layer: 0
   m_Name: KSTP
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 6240015047661986295}
   m_Layer: 0
   m_Name: MN_welcome
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 9195281928175632812}
   m_Layer: 0
   m_Name: Truck
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1030,7 +1030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47230452398b369419d80d75ad8e1464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numOfTargets: 2
+  numOfTargets: 5
   team: 1
   sinkSpeed: 2
 --- !u!1001 &243733657461674298

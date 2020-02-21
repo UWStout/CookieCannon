@@ -20,8 +20,10 @@ public class Launch : MonoBehaviour
     {
         turn = 0;
         cannon = new List<GameObject>();
-        cannon.Add(GameObject.Find("Cannon"));
-        cannon.Add(GameObject.Find("Cannon2"));
+        for (int i = 0; i < cookies.Count; ++i)
+        {
+            cannon.Add(cookies[i].transform.Find("Cannon").gameObject);
+        }
         aiming = false;
     }
 
