@@ -41,7 +41,7 @@ public class Launch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Time.timeScale == 1 && Input.GetMouseButtonDown(0))
         {
             aiming = true;
             target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -51,7 +51,7 @@ public class Launch : MonoBehaviour
             target = cannon[turn].transform.position;
         }
 
-        if (Input.GetMouseButtonUp(0))
+        if (Time.timeScale == 1 && Input.GetMouseButtonUp(0) && aiming == true)
         {
             aiming = false;
             release = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -110,5 +110,10 @@ public class Launch : MonoBehaviour
             //target = Input.mousePosition;
             target.z = 0;
         }
+    }
+
+    public void StopAiming()
+    {
+        aiming = false;
     }
 }
