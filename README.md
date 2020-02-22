@@ -19,3 +19,5 @@ Release left mouse button to launch the projectile.
 ### Credits
 Artists: Ashley Uecker & Ash Patterson
 <br />Programmers: Daniel Hagedorn & 
+
+![Banner Art](https://github.com/UWStout/CookieCannon/blob/master/Assets/Sprites/Environment/Splash_Screen.png)
