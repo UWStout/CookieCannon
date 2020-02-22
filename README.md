@@ -18,4 +18,4 @@ Release left mouse button to launch the projectile.
 
 ### Credits
 Artists: Ashley Uecker & Ash Patterson
-\nProgrammers: Daniel Hagedorn & 
+<br />Programmers: Daniel Hagedorn & 
