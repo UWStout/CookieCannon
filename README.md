@@ -20,4 +20,4 @@ Release left mouse button to launch the projectile.
 Artists: Ashley Uecker & Ash Patterson
 <br />Programmers: Daniel Hagedorn & Michael Anderson
 
-![Banner Art](https://github.com/UWStout/CookieCannon/blob/master/Assets/Sprites/Environment/Splash_Screen.png)
+![Banner Art](https://github.com/UWStout/CookieCannon/blob/master/bannerThumb.gif)
